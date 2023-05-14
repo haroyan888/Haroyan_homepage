@@ -1,0 +1,38 @@
+body {
+    margin: 0 0 0 0;
+}
+
+#page-header {
+    background-color: #4af3ff;
+    height: 75px;
+}
+
+#page-name {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    line-height: 75px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.image-box {
+    position: relative;
+}
+
+#page-title {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    display: block;
+    margin: 0 auto 0 auto;
+    top: 38%;
+}
+
+#tokyo-img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
