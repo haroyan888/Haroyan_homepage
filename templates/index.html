@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style" href="/css/index.css">
+    <title>Test article</title>
+</head>
+<body>
+    <header>
+        <a class="head-title" href="/">はろやん</a>
+    </header>
+    <!-- 
+    <table id="table">
+        <thead>
+            <tr>
+                <th colspan="2">The table header</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            
+        </tbody>
+    </table>
+    <input id="add-article" type="button"> -->
+</body><!-- 
+<script>
+    const URL = location
+    const $doc = document;
+    const $table = $doc.getElementById('table-body');
+
+    fetch(URL + '/api/get')
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            $table.innerHTML = '';
+            data.forEach(element => {
+                $table.innerHTML = $table.innerHTML + '<tr><td>'+element['id']+'</td><td>'+element['sentence']+'</td></tr>';
+            });
+        })
+        .catch(error => {
+            console.log("失敗しました");
+        });
+
+    const $add_button = document.getElementById('add-article');
+    $add_button.addEventListener('click', (e) => {
+        fetch(URL + '/api/create')
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                $table.innerHTML = '';
+                data.forEach(element => {
+                    $table.innerHTML = $table.innerHTML + '<tr><td>'+element['id']+'</td><td>'+element['sentence']+'</td></tr>';
+                });
+            })
+            .catch(error => {
+                console.log("失敗しました");
+            });
+    });
+
+</script> -->
+</html>
