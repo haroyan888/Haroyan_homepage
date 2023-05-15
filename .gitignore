@@ -2,4 +2,4 @@
 __pycache__
 letsencrypt
 myhomepage.ini
-
+.env
