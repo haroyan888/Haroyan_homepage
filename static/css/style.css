@@ -2,37 +2,52 @@ body {
     margin: 0 0 0 0;
 }
 
-#page-header {
+header {
     background-color: #4af3ff;
-    height: 75px;
+    height: 70px;
 }
 
 #page-name {
+    height: 100%;
     text-decoration: none;
-    color: #000;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1vw;
+    color: #ffffff;
     font-size: 25px;
-    line-height: 75px;
-    margin-left: 20px;
     font-weight: bold;
 }
 
-.image-box {
+#page-name:hover {
+    color: #a8f9ff;
+}
+
+.image-text {
     position: relative;
 }
 
 #page-title {
-    color: #fff;
-    font-size: 50px;
+    color: #ffffffc5;
+    font-size: 10vh;
     position: absolute;
     display: block;
-    margin: 0 auto 0 100px;
-    top: 38%;
+    margin: 0 0 0 30px;
+    bottom: 35%;
 }
 
-#tokyo-img {
-    position: absolute;
+#top-image {
     width: 100%;
     height: 600px;
     object-fit: cover;
     filter: brightness(75%);
+}
+
+#twitter-container {
+    margin: 0 auto 0 auto;
+    width: 60vw;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #636363;
 }
