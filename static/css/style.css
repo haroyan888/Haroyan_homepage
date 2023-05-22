@@ -28,7 +28,7 @@ header {
 }
 
 .image-text {
-    color: #ffffffc5;
+    color: #ffffffe5;
     font-size: clamp(40px, 7vw, 100px);
     position: absolute;
     display: block;
@@ -40,12 +40,21 @@ header {
     width: 100%;
     height: 40vw;
     object-fit: cover;
-    filter: brightness(75%);
+    filter: brightness(50%);
     margin-bottom: 0;
 }
 
-.block-item {
-    background-color: #ebebeb;
+@media screen and (min-width: 1000px) {
+  .flex-contents {
+      display: flex;
+  }
+
+  .block-item {
+      background-color: #ebebeb;
+      margin: 2vw 0 0 2vw;
+      width: 55vw;
+      border-radius: 1vw;
+  }
 }
 
 .block-title {
@@ -53,9 +62,10 @@ header {
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
-    height: 100px;
+    height: clamp(70px, 12.5vh, 100px);
     width: calc(100% - clamp(10px, 2vw, 30px));
     padding-left: clamp(10px, 2vw, 30px);
+    border-radius: 1vw 1vw 0 0;
     font-size: clamp(30px, 4vw, 50px);
     background-color: #d6d5d5;
 }
@@ -66,17 +76,51 @@ header {
     padding-bottom: 30px;
 }
 
-#intro-body {
+.list-block {
     margin-left: clamp(20px, 3vw, 40px);
     font-size: 20px;
 }
 
-#twitter-container {
-    margin: 0 auto 0 auto;
-    width: 60vw;
+#intro-list {
+    padding-left: 0;
+}
+
+.list-content {
+    list-style:none;
+}
+
+@media screen and (min-width: 1000px) {
+    #twitter-item {
+        margin-top: 0;
+        width: 400;
+        padding-top: 30px;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .block-item {
+        background-color: #ebebeb;
+        margin: 2vw auto 0 auto;
+        width: 75vw;
+        min-width: 450px;
+        border-radius: 1vw;
+    }
+
+    #twitter-item {
+        padding-top: 30px;
+    }
+    .twitter-timeline {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 footer {
-    margin-top: 0;
+    margin-top: 10px;
     background-color: #636363;
 }
