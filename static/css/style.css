@@ -107,7 +107,7 @@ header {
         background-color: #ebebeb;
         margin: 2vw auto 0 auto;
         width: 75vw;
-        min-width: 450px;
+        min-width: 375px;
         border-radius: 1vw;
     }
 
@@ -121,6 +121,12 @@ header {
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 2vw;
+    height: 100px;
+    width: calc(100% - 2vw);
+    color: #fff;
     background-color: #636363;
 }
